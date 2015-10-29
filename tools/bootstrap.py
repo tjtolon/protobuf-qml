@@ -36,6 +36,7 @@ def build(configuration, out, args, cmake_args):
       '-DQt5Qml_DIR=%s/Qt5Qml' % args.qt5dir,
       '-DQt5Quick_DIR=%s/Qt5Quick' % args.qt5dir,
       '-DQt5QuickTest_DIR=%s/Qt5QuickTest' % args.qt5dir,
+      '-DQt5Test_DIR=%s/Qt5Test' % args.qt5dir,
     ])
 
   cc = args.cc or (args.clang and 'clang')

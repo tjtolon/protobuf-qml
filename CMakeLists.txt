@@ -27,6 +27,7 @@ cmake_dependent_option(BUILD_GRPC_TEST_SERVER "Build gRPC test server" ON
   "GRPC++_FOUND" OFF)
 
 if(BUILD_PROTOBUF OR BUILD_GRPC)
+  find_package(Qt5Test COMPONENTS Private REQUIRED)
   find_package(Qt5Core COMPONENTS Private REQUIRED)
   find_package(Qt5Qml COMPONENTS Private REQUIRED)
   find_package(Qt5Quick COMPONENTS Private REQUIRED)
